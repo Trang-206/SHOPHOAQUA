@@ -1,0 +1,49 @@
+@{
+    ViewData["Title"] = "Liên hệ với chúng tôi";
+}
+
+<div class="container my-5">
+    <h3 class="text-success fw-bold text-uppercase mb-4 border-bottom pb-2">Liên Hệ Với SHOPHOAQUA</h3>
+    <div class="row g-4">
+        <!-- Cột thông tin cửa hàng -->
+        <div class="col-md-5">
+            <div class="card p-4 shadow-sm h-100 bg-success text-white">
+                <h4 class="fw-bold mb-4">Hệ Thống Hoa Quả Sạch</h4>
+                <p class="mb-3"><strong>📍 Địa chỉ:</strong> Số 123 Đường Lê Lợi, Thành phố Vinh, Nghệ An</p>
+                <p class="mb-3"><strong>📞 Hotline đặt hàng:</strong> 1900 2268 - 0987 654 321</p>
+                <p class="mb-3"><strong>✉️ Email:</strong> cskh@shophoaqua.vn</p>
+                <p class="mb-3"><strong>⏰ Giờ mở cửa:</strong> 07:00 - 22:00 (Tất cả các ngày trong tuần)</p>
+                <hr class="border-light">
+                <p class="small mb-0">Cam kết 100% hoa quả tươi sạch, rõ nguồn gốc xuất xứ, đổi trả miễn phí trong 24h nếu sản phẩm không đạt chất lượng.</p>
+            </div>
+        </div>
+
+        <!-- Cột Form gửi phản hồi -->
+        <div class="col-md-7">
+            <div class="card p-4 shadow-sm h-100">
+                <h5 class="fw-bold mb-3">Gửi thắc mắc / Góp ý cho chúng tôi</h5>
+                <form onsubmit="alert('Cảm ơn bạn đã gửi liên hệ! Nhân viên sẽ phản hồi trong thời gian sớm nhất.'); return false;">
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Họ tên của bạn *</label>
+                        <input type="text" class="form-control" placeholder="Nhập họ tên..." required>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-semibold">Số điện thoại *</label>
+                            <input type="tel" class="form-control" placeholder="Nhập số điện thoại..." required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-semibold">Email</label>
+                            <input type="email" class="form-control" placeholder="Nhập email...">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Nội dung lời nhắn *</label>
+                        <textarea class="form-control" rows="4" placeholder="Nhập nội dung bạn cần tư vấn (đặt giỏ quà, khiếu nại, hợp tác...)" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success px-4 py-2 fw-bold">Gửi liên hệ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
