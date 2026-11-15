@@ -1,0 +1,82 @@
+@{
+    ViewData["Title"] = "Thanh toán đơn hàng";
+}
+
+<div class="container my-5">
+    <h3 class="text-success fw-bold text-uppercase mb-4 border-bottom pb-2">Thanh Toán Đơn Hàng</h3>
+    <div class="row g-4">
+        <!-- Cột trái: Form thông tin khách hàng -->
+        <div class="col-md-7">
+            <div class="card p-4 shadow-sm">
+                <h5 class="fw-bold mb-3">Thông tin giao hàng</h5>
+                <form onsubmit="alert('Đặt hàng thành công! Cảm ơn bạn đã mua hoa quả tại SHOPHOAQUA.'); return false;">
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Họ và tên người nhận *</label>
+                        <input type="text" class="form-control" placeholder="Nhập họ tên..." required>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-semibold">Số điện thoại *</label>
+                            <input type="tel" class="form-control" placeholder="09xx xxx xxx" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label fw-semibold">Email (tùy chọn)</label>
+                            <input type="email" class="form-control" placeholder="email@gmail.com">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Địa chỉ nhận hàng *</label>
+                        <input type="text" class="form-control" placeholder="Số nhà, tên đường, phường/xã, quận/huyện..." required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Ghi chú đơn hàng</label>
+                        <textarea class="form-control" rows="2" placeholder="Ví dụ: Giao giờ hành chính, chọn quả chín vừa..."></textarea>
+                    </div>
+
+                    <h5 class="fw-bold mt-4 mb-3">Phương thức thanh toán</h5>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="pttt" id="cod" checked>
+                        <label class="form-check-label" for="cod">Thanh toán tiền mặt khi nhận hàng (COD)</label>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="radio" name="pttt" id="bank">
+                        <label class="form-check-label" for="bank">Chuyển khoản ngân hàng / Ví MoMo</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100 py-2 fw-bold text-uppercase">Xác nhận đặt hàng</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Cột phải: Tóm tắt giỏ hàng -->
+        <div class="col-md-5">
+            <div class="card p-4 shadow-sm bg-light">
+                <h5 class="fw-bold mb-3">Đơn hàng của bạn</h5>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Nho Mẫu Đơn Hàn Quốc</h6>
+                            <small class="text-muted">Số lượng: 1</small>
+                        </div>
+                        <span class="text-muted">450,000 đ</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Táo Envy Mỹ Size Lớn</h6>
+                            <small class="text-muted">Số lượng: 1</small>
+                        </div>
+                        <span class="text-muted">220,000 đ</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Phí vận chuyển</span>
+                        <span class="text-success">Miễn phí</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between fw-bold fs-5">
+                        <span>Tổng cộng</span>
+                        <span class="text-danger">670,000 đ</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
