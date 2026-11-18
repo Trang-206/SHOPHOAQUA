@@ -65,6 +65,10 @@ namespace SHOPHOAQUA.Controllers
 
         };
 
+        public IActionResult MuaVu()
+        {
+            return View();
+        }
         public IActionResult SanPham(string loai = "Best-seller (Sản phẩm bán chạy)")
         {
             var ketQua = _danhSach.Where(x => x.TenDanhMuc == loai).ToList();
